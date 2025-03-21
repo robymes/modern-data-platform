@@ -3,7 +3,6 @@
 python -m venv .env
 source .env/bin/activate
 pip install --upgrade pip
-pip install duckdb duckdb-engine
-pip install dagster dagster-webserver
+# pip install duckdb
 pip install sqlmesh
-pip install "sqlmesh[llm,dev,web,trino]"
+pip install "sqlmesh[dev,web,trino,llm]"
