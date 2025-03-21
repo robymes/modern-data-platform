@@ -18,7 +18,7 @@
     ],
     "python.venvPath": "/usr/local/venvs"
   },
-  "postCreateCommand": "mkdir -p /usr/local/venvs && python -m venv /usr/local/venvs/myenv && /usr/local/venvs/myenv/bin/python -m pip install -r ${containerWorkspaceFolder}/requirements.txt",
+  "postCreateCommand": "find /workspaces -name init_dev_environment.sh -type f | head -1 | xargs bash",
   "postStartCommand": "echo 'source /usr/local/venvs/myenv/bin/activate' >> ~/.bashrc",
   "remoteUser": "root",
   "customizations": {
