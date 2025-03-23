@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "trinoOptions": {
+                "ssl": {
+                    "rejectUnauthorized": false
+                }
+            },
+            "previewLimit": 50,
+            "driver": "Trino Driver",
+            "name": "trino_dwh",
+            "server": "http://trino_dwh:8080",
+            "catalog": "platform_catalog",
+            "user": "admin"
+        }
+    ]
+}
